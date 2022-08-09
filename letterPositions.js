@@ -1,4 +1,4 @@
-//FUNCTION IMPLEMENTATION
+/* //FUNCTION IMPLEMENTATION
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed, ${actual} === ${expected}`);
@@ -17,7 +17,7 @@ const eqArrays = function(array1, array2) {
     }
   }
   return true;
-};
+}; */
 
 
 const letterPositions = function(sentence) {
@@ -35,7 +35,7 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-const result = letterPositions("hello");
+/* const result = letterPositions("hello");
 assertArraysEqual(result.h, [0]);
 assertArraysEqual(result.e, [1]);
 assertArraysEqual(result.l, [2, 3]);
@@ -52,6 +52,6 @@ assertArraysEqual(result2.o, [6, 19]);
 assertArraysEqual(result2.u, [7, 20]);
 assertArraysEqual(result2.s, [8, 21]);
 assertArraysEqual(result2.e, [9, 16, 22]);
-assertArraysEqual(result2.n, [12]);
+assertArraysEqual(result2.n, [12]); */
 
 module.exports = letterPositions;
