@@ -1,22 +1,3 @@
-//FUNCTION IMPLEMENTATION
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-
-const eqArrays = function(array1, array2) {
-  for (let x = 0; x < array1.length; x++) {
-    if (array1[x] !== array2[x]) {
-      return false;
-    }
-  }
-  return true;
-};
-
 /*
 A function flatten which will take in an array
 containing elements including nested arrays of elements,
@@ -37,6 +18,6 @@ const flatten = (source) => {
   }
   return newArray;
 };
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // => [1, 2, 3, 4, 5, 6]
+//assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // => [1, 2, 3, 4, 5, 6]
 
 module.exports = flatten;
